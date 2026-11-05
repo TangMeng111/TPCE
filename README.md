@@ -13,7 +13,7 @@ A dual-branch structural prototype framework for cross-domain few-shot medical i
 
 ![Overall framework](method_framework.png)
 
-This package covers the **abdominal main model**: CHAOS T2-SPIR MRI to Synapse/SABS CT. Datasets and trained checkpoints are not included.
+This package covers the **abdominal main model**: CHAOS T2-SPIR MRI to Synapse/SABS CT.
 
 ## Installation
 
@@ -62,7 +62,7 @@ python -B -m data.generate_supervoxels --data-root data/synapse \
   --out data/synapse/supervoxels_felzenszwalb_5000
 ```
 
-Use the complete datasets to preserve case numbering. Synapse IDs 0–29 follow lexicographic filename order. Preprocessing outputs must initially be empty. Settings are recorded in `data/config.json`; Felzenszwalb's `min_size=5000` is a small-region merge threshold in voxels.
+Use the complete datasets to preserve case numbering. Synapse IDs 0–29 follow lexicographic filename order. Settings are recorded in `data/config.json`; Felzenszwalb's `min_size=5000` is a small-region merge threshold in voxels.
 
 ## Training
 
