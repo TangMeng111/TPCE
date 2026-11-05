@@ -116,6 +116,7 @@ outputs/       # Generated checkpoints, predictions and reports
 ```
 
 > **Code coming soon.** The code will be publicly released upon acceptance of the paper.
+> All core codes of this project will be **publicly released in the GitHub repository soon** after acceptance of our paper.
 
 ## Acknowledgements
 
@@ -123,5 +124,4 @@ We thank the CHAOS and Synapse providers, PyTorch/torchvision, scikit-image, and
 
 ## License
 
-Original project code is licensed under the [MIT License](LICENSE).
-Third-party supervoxel code retains its [upstream license notices](data/preprocessing/felzenszwalb_3d/LICENSE).
+This project is licensed under the [MIT License](LICENSE).
