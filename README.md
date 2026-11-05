@@ -116,7 +116,6 @@ outputs/       # Generated checkpoints, predictions and reports
 ```
 
 > **Code coming soon.** The code will be publicly released upon acceptance of the paper.
-> All core codes of this project will be **publicly released in the GitHub repository soon** after acceptance of our paper.
 
 ## Acknowledgements
 
