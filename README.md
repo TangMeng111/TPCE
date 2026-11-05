@@ -67,10 +67,7 @@ Use the complete datasets to preserve case numbering. Synapse IDs 0–29 follow 
 ## Training
 
 ```bash
-# Shared branch: 5 epochs
 python -B -m train shared --gpu 5 --out outputs/training/shared
-
-# Novel branch: initialize from the shared checkpoint, train to epoch 100
 python -B -m train novel --gpu 5 \
   --init-checkpoint outputs/training/shared/checkpoints/epoch_005.pth \
   --out outputs/training/novel
@@ -78,8 +75,7 @@ python -B -m train novel --gpu 5 \
 
 Both shot settings reuse the same pair of checkpoints. Training configurations are in `train/configs/shared.json` and `train/configs/novel.json`.
 
-`--gpu` selects a physical GPU; examples use GPU5. The entry points exclude GPUs 1 and 9. Evaluation also supports `--cpu`.
-
+`--gpu` selects a physical GPU; examples use GPU5.
 ## Evaluation
 
 ```bash
