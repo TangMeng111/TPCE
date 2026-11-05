@@ -75,7 +75,7 @@ python -B -m train novel --gpu 5 \
 
 Both shot settings reuse the same pair of checkpoints. Training configurations are in `train/configs/shared.json` and `train/configs/novel.json`.
 
-`--gpu` selects a physical GPU; examples use GPU5.
+`--gpu` selects a physical GPU, examples use GPU5.
 ## Evaluation
 
 ```bash
@@ -94,8 +94,6 @@ python -B -m evaluation summarize --shots 1,5 --out outputs/evaluation/full
 Each run evaluates only the selected shot setting. Five-fold results are summarized automatically; use `--folds 0,1` to run selected folds.
 
 Per-fold predictions and FPD tables are saved under `fold_N/Kshot/attempt_NNN/`. `summary.json` contains group means and sample standard deviations; `per_class.csv` contains per-fold, per-class FPD.
-
-**Fused Pos-Dice (FPD)** measures class-wise Dice from joint predictions on ground-truth-positive slices, macro-averaged within each category group and then equally across the five folds. Evaluation settings are in `evaluation/configs/`.
 
 ## Abdominal Results
 
