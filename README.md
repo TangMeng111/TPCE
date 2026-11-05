@@ -11,7 +11,7 @@
 
 A dual-branch structural prototype framework for cross-domain few-shot medical image segmentation. The shared branch learns from source annotations; the novel branch learns from target supervoxel pseudo-tasks. Their predictions are fused into a joint multi-class segmentation.
 
-![Overall framework](framework.png)
+![Overall framework](method_framework.png)
 
 This package covers the **abdominal main model**: CHAOS T2-SPIR MRI to Synapse/SABS CT. Datasets and trained checkpoints are not included.
 
